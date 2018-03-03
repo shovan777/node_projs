@@ -3,7 +3,7 @@
 - runs ten above and below current break point
 
 ```n```
--moves to very next statement
+- moves to very next statement
 
 ```c```
 - means continue runs the program to the end
@@ -18,3 +18,17 @@
 - write this in your code where you want the line break
 
 ### Debugging with chrome
+- ya you can debug with chrome with command as
+```bash
+node --inspect-brk debugging.js
+```
+- then go into chrome and enter in the address bar
+```chrome://inspect```
+- open dedicated dev tools
+- you can also use the above command with nodemon
+
+### arrow functions
+- arrow functions do not bind the this keyword
+- this refers to the parent binding
+- without any parent this refers to global
+- you don't get arguments keyword
